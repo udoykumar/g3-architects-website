@@ -12,6 +12,9 @@
 .display-flex{
     display: flex;
 }
+.text-primary{
+    color: #FF900E;
+}
 .text-gray{
     color: #424242;
 }
@@ -21,12 +24,36 @@
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
 }
+.btn-primary{
+    background-color: #FF900E;
+    color: #fff;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 8px;
+}
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
 
 /* header styles  */
 
 /* navbar related style  */
 .navbar{
     justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
 }
 
 .nav-item{
@@ -36,9 +63,76 @@
 .nav-link{
     text-decoration: none;
     font-weight: 500;
-
+    font-size: 1.2rem;
 }
 .navbar, .banner{
     max-width: 1200px;
     margin: 0 auto;
+}
+/* banner related style  */
+.banner-contant{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner-image{
+    width: 100%;
+}
+/* team and feature related style  */
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.our-feature{
+    margin-left: 120px;
+    max-width: 460px;
+}
+
+#quick-list{
+    font-weight: 500;
+}
+
+/* responsive media query */
+@media screen and (max-width: 576px){
+    .navbar, .nav-links, .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+    .our-feature{
+        margin: 20px ;
+        text-align: center;
+    }
+    .our-feature button{
+        margin-top: 1rem;
+    }
+    .feature-title{
+    font-size: 1.8rem;
+}
+}
+
+/* medium size device */
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .teams{
+        flex-direction: column;
+    }
+     .our-feature{
+        margin: 50px 0;
+        text-align: center;
+    }
+}
+
+.hide{
+    display: none;
 }
