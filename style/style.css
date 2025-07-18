@@ -39,7 +39,7 @@
     border-radius: 8px;
 }
 
-main {
+main, footer {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -82,7 +82,8 @@ main>section {
 }
 
 .navbar,
-.banner {
+.banner,
+.footer-container {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -146,7 +147,7 @@ main>section {
 }
 
 .feature-card {
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
     margin-bottom: 16px;
     border-radius: 8px;
@@ -154,7 +155,7 @@ main>section {
 
 .feature-card .feature-title {
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-top: 0px;
     margin-bottom: 0px;
 
@@ -163,6 +164,7 @@ main>section {
 .feature-card .feature-subtitle {
     margin-top: 5px;
     margin-bottom: 0;
+    font-size: 1.2rem;
 }
 
 #experience-badge {
@@ -243,7 +245,18 @@ main>section {
 .sponsor-companies img {
     filter: grayscale(100%);
 }
-
+/* footer related style  */
+/* footer{
+    margin: ;
+} */
+.footer-contianer{
+    background-color: rgba(255, 144, 14, 0.1);
+    font-size: 1rem;
+    padding: 20px 0;
+    text-align: center;
+    margin: 100px 0;
+    border-radius: 10px;
+}
 /* responsive media query */
 @media screen and (max-width: 576px) {
 
